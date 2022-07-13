@@ -1,0 +1,59 @@
+/*Inicio barra lateral*/
+
+.collapsible{
+  max-width: 250px;
+  overflow: hidden;
+  font-weight: 500;
+  position: relative;
+}
+
+.collapsible label{
+  position: relative;
+  font-weight: 600;
+  background: #fff;
+  box-shadow: 0 5px 11px rgba(0,0,0,.1),04px 11px rgba(0,0,0,.08);
+  color: black;
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding: 15px 0;
+  border-radius: 4px;
+}
+.collapsible label:after{
+  position: relative;
+  content: "";
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  width: 18px;
+  height: 18px;
+}
+.collapsible-text{
+  position: relative;
+  max-height: 1px;
+  overflow: hidden;
+  border-radius: 4px;
+  line-height: 1.4;
+}
+
+.collapsible .collapsible-text{
+  position: relative;
+  max-height: 300px;
+  padding-bottom: 25px;
+  background: #fff;
+  box-shadow: 0 5px 11px rgba(0,0,0,.1),04px 11px rgba(0,0,0,.08);
+}
+.collapsible-text h2{
+  position: relative;
+  margin-bottom: 10px;
+  padding: 15px 15px 0;
+  color: blue;
+}
+.collapsible-text{
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+/*Fin barra lateral*/
