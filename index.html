@@ -1,49 +1,124 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-</head>
+    <title>CONTACTO</title>
+  </head >
 
-<body>
+  
+  <body class="mx-5 my-5 " style="background-image: -moz-element();"> 
 
-    <!--TAB-->
-    <ul class="nav">
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-    </ul>
-    <!--FIN TAB-->
+        <!--TAB-->
+        <ul class="nav">
+          <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+      </ul>
+      <!--FIN TAB-->
+  
+      <!--BARRA LATERAL-->
+      <div class="wrapper">
+          <div class="collapsible">
+              <input type="checkbox" id="collapsible-head">
+              <label for="collapsible-head">Gym Pesas</label>
+              <div class="collapsible-text">
+                  <li>pecho</li>
+                  <li>piernas</li>
+                  <li>brazos</li>
+              </div>
+          </div>
+      </div>
+      <!--FIN BARRA LATERAL-->
+      
+   <h1 id="inicio" class="text-light  "></h1>
+    <H1 id="ins" class="text-center text-light rounded-top  p-3 g-2 m-aut">INSCRIPCION</H1>
 
-    <!--BARRA LATERAL-->
-    <div class="wrapper">
-        <div class="collapsible">
-            <input type="checkbox" id="collapsible-head">
-            <label for="collapsible-head">Gym Pesas</label>
-            <div class="collapsible-text">
-                <li>pecho</li>
-                <li>piernas</li>
-                <li>brazos</li>
-            </div>
-        </div>
-    </div>
-    <!--FIN BARRA LATERAL-->
+    <form  class="row g-2 text-light rounded-5 bg-secundary p-3 m-aut " style="background-color: #515255 ;" action="enviar.php" method="post">
+
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Nombres</label>
+    <input type="text" name="nombre"class="form-control " id="inputAddress"  placeholder="Ingrese Nombre" required >
+  </div>
+
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Apellidos</label>
+    <input type="text"  name ="apellidos"class="form-control" id="inputAddress" placeholder="Ingrese Apellido"required>
+  </div>
+  <div class="col-12">
+    <label for="inputAddress" class="form-label">Email</label>
+    <input type="email"  name ="email"class="form-control" id="inputAddress" placeholder="Email" required>
+  </div>
+  <div class="col-12" >
+    <label for="inputAddress2" class="form-label">Direccion</label>
+    <input type="text" name ="direccion" class="form-control" id="inputAddress2" placeholder="calle y numero" required>
+  </div>
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">Localidad</label>
+    <input type="text"  name ="localidad"class="form-control" id="inputCity" placeholder="Localidad  EJ:Adolfo sordeaux" required>
+  </div>
+  <div class="col-md-4">
+    <label for="inputState" class="form-label">Distrito</label>
+    <select id="inputState"  name ="distrito" class="form-select ">
+      <option selected>Vicente Lopez</option>
+      <option>San isidro</option>
+      <option>San Fernando</option>
+      <option>San Martin</option>
+      <option>Malvinas Argentinas</option>
+      <option>3 De Febrero</option>
+      <option>Malvinas Argentina</option>
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label for="inputZip" class="form-label">Telefono</label>
+    <input type="number" name ="telefono" class="form-control" id="inputZip" placeholder="telefon" required>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </div>
+</form >
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!--  
+      // camp1 id 
+         camp2 Nombre
+         camp3 Apellido
+         camp4 Email
+         camp5 Direccion 
+         camp6 Localidad 
+         camp7 Distrito 
+         camp8 Telefono 
 
 
-</body>
+        xammp 
+        carpeta-htdocs-dashboard (index)
 
+        apache 
+        mysql-admin open phpmyadminlocalhost
+
+        varchar (limitar por mucha inf)
+        telefono (varchar (xx-xxxx-xxxx))
+        id (int primary (A_I = ) )  
+
+
+    -->
+  </body>
 </html>
